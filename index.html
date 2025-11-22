@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Quiet Space</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Developer Note: No analytics, no cookies, no external trackers included. -->
 </head>
+
 <body>
 
     <main class="container">
         <!-- 1) Hero / Intro -->
         <header class="hero section-fade">
             <h1>A Quiet Space</h1>
-            <p class="subtext">Not to persuade — only to be honest, and to show steady effort.</p>
+            <p class="subtext">Not to persuade only to be honest, and to show steady effort.</p>
         </header>
 
         <!-- 2) "I Was Wrong" Apology Card -->
         <section id="apology" class="card apology-card section-fade">
             <div class="card-content">
                 <p>I want to say this the way I should’ve said it from the start:<br>
-                I was wrong.</p>
+                    I was wrong.</p>
 
                 <p>When I was getting close to you,<br>
-                I was still in a relationship I should’ve ended earlier.<br>
-                I told myself I was already leaving…<br>
-                but the truth is, it wasn’t over yet.<br>
-                And that made what I did unfair — to her, and especially to you.</p>
+                    I was still in a relationship I should’ve ended earlier.<br>
+                    I told myself I was already leaving…<br>
+                    but the truth is, it wasn’t over yet.<br>
+                    And that made what I did unfair to her, and especially to you.</p>
 
                 <p>You didn’t deserve to be pulled into something unfinished.<br>
-                You didn’t deserve uncertainty.<br>
-                And you didn’t deserve to question whether I might hurt you someday the same way.</p>
+                    You didn’t deserve uncertainty.<br>
+                    And you didn’t deserve to question whether I might hurt you someday the same way.</p>
 
                 <p>Your fear makes sense.<br>
-                Your disappointment makes sense.<br>
-                Your distance makes sense.</p>
+                    Your disappointment makes sense.<br>
+                    Your distance makes sense.</p>
 
                 <p>I’m not here to explain it away.<br>
-                I’m here to acknowledge exactly what I failed to do:<br>
-                to be honest, clean, and fully free before choosing someone new.</p>
+                    I’m here to acknowledge exactly what I failed to do:<br>
+                    to be honest, clean, and fully free before choosing someone new.</p>
 
                 <p>I’m not asking you to trust me right now.<br>
-                I’m not asking for forgiveness,<br>
-                and I’m not asking for a relationship.</p>
+                    I’m not asking for forgiveness,<br>
+                    and I’m not asking for a relationship.</p>
 
-                <p>I just want to take responsibility —<br>
-                clearly, quietly, and without pressure.</p>
+                <p>I just want to take responsibility <br>
+                    clearly, quietly, and without pressure.</p>
 
                 <p>Thank you for giving this a moment.<br>
-                Even reading this is more grace than I deserve.</p>
+                    Even reading this is more grace than I deserve.</p>
             </div>
 
             <div class="interaction-area">
                 <button id="btn-read-apology" class="btn-soft">I’ve read this</button>
-                <p id="msg-read-apology" class="hidden-message" aria-live="polite">Thank you for giving this a moment.</p>
+                <p id="msg-read-apology" class="hidden-message" aria-live="polite">Thank you for giving this a moment.
+                </p>
             </div>
         </section>
 
         <!-- 3) "Ask Me Anything" Panel -->
         <section id="ask" class="card ask-card section-fade">
             <h2>Ask Me Anything</h2>
-            <p class="intro-copy">Ask anything you need to know — small or hard. I will answer honestly, in person or in a message, when you choose to ask. This site won’t store your question.</p>
-            
+            <p class="intro-copy">Ask anything you need to know small or hard. I will answer honestly, in person or in a
+                message, when you choose to ask. This site won’t store your question.</p>
+
             <form id="ask-form" class="ask-form" onsubmit="return false;">
                 <div class="input-group">
                     <label for="question-input" class="sr-only">Your question</label>
                     <input type="text" id="question-input" placeholder="What do you want to know?" autocomplete="off">
                     <button type="submit" class="btn-send">Send</button>
                 </div>
-                <p class="privacy-note">Privacy: This page does not record or send your input. Everything here is symbolic and private to your screen.</p>
+                <p class="privacy-note">Privacy: This page does not record or send your input. Everything here is
+                    symbolic and private to your screen.</p>
             </form>
 
             <div id="ask-confirmation" class="confirmation-card hidden">
                 <p class="typing-text">I see you. I won’t hide from your questions.<br>
-                If and when you ask, I will answer honestly outside this site — directly, without defense.</p>
-                
+                    If and when you ask, I will answer honestly outside this site directly, without defense.</p>
+
                 <div class="micro-actions">
                     <button id="btn-preview-answer" class="btn-link">Read my answer here</button>
                     <button id="btn-ask-person" class="btn-link">I prefer to ask in person</button>
                 </div>
-                
+
                 <div id="preview-answer-content" class="hidden-content">
-                    <p><em>(This is an example of how I would answer: simply, truthfully, and without making excuses. I am ready whenever you are.)</em></p>
+                    <p><em>(This is an example of how I would answer: simply, truthfully, and without making excuses. I
+                            am ready whenever you are.)</em></p>
                 </div>
                 <div id="ask-person-content" class="hidden-content">
                     <p>I understand. I’ll wait and respect your pace.</p>
@@ -97,7 +105,7 @@
             <div id="garden-canvas" class="garden-canvas" role="img" aria-label="A growing plant visualization">
                 <!-- SVG content will be injected by JS -->
             </div>
-            <p class="alt-note">This is a quiet symbol of presence and patience — not progress, not a score.</p>
+            <p class="alt-note">This is a quiet symbol of presence and patience not progress, not a score.</p>
         </section>
 
         <!-- 5) "What I’m Changing" -->
@@ -109,7 +117,7 @@
                 <li class="change-item">I journal to understand why I chose dishonesty instead of courage.</li>
                 <li class="change-item">I answer hard questions directly, even when the truth is uncomfortable.</li>
                 <li class="change-item">I give space without taking it personally.</li>
-                <li class="change-item">I show care through steady, repeated actions — not just words.</li>
+                <li class="change-item">I show care through steady, repeated actions not just words.</li>
             </ul>
         </section>
 
@@ -117,18 +125,18 @@
         <footer id="closing" class="card closing-card section-fade">
             <div class="glow-cursor-follower"></div>
             <div class="card-content">
-                <p>Whatever you choose — silence, distance, or even a small step closer — I will respect it fully.</p>
+                <p>Whatever you choose silence, distance, or even a small step closer I will respect it fully.</p>
 
                 <p>You are not obligated to fix this.<br>
-                You are not responsible for my remorse.<br>
-                Your peace matters more than my hopes.</p>
+                    You are not responsible for my remorse.<br>
+                    Your peace matters more than my hopes.</p>
 
                 <p>If forgiveness ever comes, it should come because you healed — not because I asked for it.<br>
-                For now, I want you to know:</p>
+                    For now, I want you to know:</p>
 
                 <p>You’re safe here.<br>
-                You’re respected here.<br>
-                Your choice will always be yours.</p>
+                    You’re respected here.<br>
+                    Your choice will always be yours.</p>
 
                 <p>Thank you for giving this a moment.</p>
             </div>
@@ -142,4 +150,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
